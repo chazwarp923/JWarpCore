@@ -1,4 +1,9 @@
 *.class
+.settings/
+.classpath
+.project
+bin/
+
 
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
@@ -22,19 +27,16 @@ hs_err_pid*
 .AppleDouble
 .LSOverride
 
+# Icon must ends with two \r.
+Icon
+
+
 # Thumbnails
 ._*
 
 # Files that might appear on external disk
 .Spotlight-V100
 .Trashes
-
-# Directories potentially created on remote AFP share
-.AppleDB
-.AppleDesktop
-Network Trash Folder
-Temporary Items
-.apdisk
 
 # Windows
 # =========================
@@ -54,6 +56,3 @@ $RECYCLE.BIN/
 *.msi
 *.msm
 *.msp
-
-# Windows shortcuts
-*.lnk
