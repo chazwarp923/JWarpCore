@@ -5,7 +5,7 @@ package com.chazwarp.JWarpCore.File;
 
 public class FileHelper {
 	
-	public static String GetBaseSaveDirectory(String prefix) {
+	public static String getSaveDirectory(String subdirectory, String filename) {
 		String baseSaveDirectory = null;
 		String OS = (System.getProperty("os.name")).toUpperCase();
 		
@@ -17,6 +17,6 @@ public class FileHelper {
 			baseSaveDirectory += "/Library/Application Support";
 		}
 		
-		return baseSaveDirectory + prefix;
+		return baseSaveDirectory + "\\" + subdirectory + "\\" + filename;
 	}
 }
