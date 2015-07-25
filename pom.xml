@@ -2,7 +2,6 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.chazwarp.JWarpCore</groupId>
   <artifactId>JWarpCore</artifactId>
-  <packaging>pom</packaging>
   <version>0.1-SNAPSHOT</version>
   <build>
     <sourceDirectory>src</sourceDirectory>
