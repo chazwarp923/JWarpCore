@@ -11,13 +11,15 @@ public class FileHelper {
 		
 		if(OS.contains("WIN")) {
 			baseSaveDirectory = System.getenv("AppData");
+			return baseSaveDirectory + "\\" + subdirectory;
 		}
 		else {
 			baseSaveDirectory = System.getProperty("user.home");
 			baseSaveDirectory += "/Library/Application Support";
+			
+			return baseSaveDirectory + "/" + subdirectory;
 		}
-		
-		return baseSaveDirectory + "\\" + subdirectory;
+		return "ERROR";
 	}
 	
 	public static String getSaveDirectory(String subdirectory, String filename) {
@@ -26,12 +28,16 @@ public class FileHelper {
 		
 		if(OS.contains("WIN")) {
 			baseSaveDirectory = System.getenv("AppData");
+			
+			return baseSaveDirectory + "\\" + subdirectory + "\\" + filename;
 		}
 		else {
 			baseSaveDirectory = System.getProperty("user.home");
 			baseSaveDirectory += "/Library/Application Support";
+			
+			return baseSaveDirectory + "/" + subdirectory + "/" + filename;
 		}
 		
-		return baseSaveDirectory + "\\" + subdirectory + "\\" + filename;
+		return "ERROR";
 	}
 }
