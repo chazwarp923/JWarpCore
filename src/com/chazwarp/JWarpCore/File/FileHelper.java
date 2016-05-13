@@ -19,7 +19,6 @@ public class FileHelper {
 			
 			return baseSaveDirectory + "/" + subdirectory;
 		}
-		return "ERROR";
 	}
 	
 	public static String getSaveDirectory(String subdirectory, String filename) {
@@ -37,7 +36,5 @@ public class FileHelper {
 			
 			return baseSaveDirectory + "/" + subdirectory + "/" + filename;
 		}
-		
-		return "ERROR";
 	}
 }
